@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Tahoma, sans-serif;
+	line-height: 1.5;
+}
+.section {
+	padding: 30px 10%;
+}
+.header {
+	margin-top: 80px;
+	text-align: center;
+	font-size: 24px;
+}
+.header span{
+	font-weight: 400;	
+	display: block;
+	color: #333
+}
+.header strong {
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.main {
+	margin-top: 80px;
+	text-align: center;
+}
+.video, .form {
+	display: inline-block;
+	vertical-align: top;
+}
+form{
+	border: 5px solid #2727d9;
+	padding: 20px;
+	text-align: center;
+	margin-left: 30px;
+}
+.form-header {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 900;
+	margin-bottom: 20px;
+
+}
+
+.form input {
+	margin-top: 10px;
+	width: 300px;
+	padding: 17px;
+	font-size: 18px;
+	border: 1px solid #333;
+	display: block;
+}
+.btn {
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: 900;
+	color: #fff;
+	background-color: #2727d9;
+	border: none;
+	width: 300px;
+	height: 60px;
+	display: block;
+	margin: 11px auto;
+}
+.col {
+	display: inline-block;
+	text-align: center;
+	margin: 10px 40px;
+}
+.feature-header {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 24px;
+	color: #333;
+}
+.feature {
+	margin: 60px auto;
+	text-align: center;
+}
+.clients {
+	margin-top: 40px;
+	text-align: center;
+}
+.client {
+	margin: 10px;
+	display: inline-block;
+}
