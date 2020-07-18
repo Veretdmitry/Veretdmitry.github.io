@@ -10,4 +10,5 @@
  [Урок 13: Вёрстка реального макета. 1:Header](https://veretdmitry.github.io/L13.RealProject1/src/index.html)  
  [Урок 14: Подключение шрифтов.](https://veretdmitry.github.io/L14.Fonts/index.html)  
  [Урок 15: Псевдоклассы и псевдоэлементы.](https://veretdmitry.github.io/L15.Pseudo-elements/index.html)  
- [Урок 16: Aдаптивность первого макета](https://veretdmitry.github.io/L16.RealProject1/src/index.html)    
+ [Урок 16: Aдаптивность первого макета](https://veretdmitry.github.io/L16.RealProject1/src/index.html)  
+ [Урок 17: Использование готовых слайдеров](https://veretdmitry.github.io/L17.Slider/index.html)  
