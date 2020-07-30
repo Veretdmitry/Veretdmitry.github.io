@@ -12,3 +12,4 @@
  [Урок 15: Псевдоклассы и псевдоэлементы.](https://veretdmitry.github.io/L15.Pseudo-elements/index.html)  
  [Урок 16: Aдаптивность первого макета](https://veretdmitry.github.io/L16.RealProject1/src/index.html)  
  [Урок 17: Использование готовых слайдеров](https://veretdmitry.github.io/L17.Slider/index.html)  
+ [Урок 18: Добавление слайдера на первый макет](https://veretdmitry.github.io/L16.RealProject1/src/index.html)  
