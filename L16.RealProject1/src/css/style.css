@@ -49,6 +49,12 @@ a:hover {
 section {
   padding: 10rem 0;
 }
+.section-header {
+  margin: 2rem 0;
+  font-family: 'ProximaNova_bold';
+  font-size: 3.6rem;
+  text-align: center;
+}
 /* Main header */
 .main {
   padding: 3rem 0 5rem;
@@ -155,6 +161,60 @@ section {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+/* Оформление секции с преимуществами */
+.features-slider {
+  margin-top: 10rem;
+}
+.features-block {
+  text-align: center;
+}
+.features-block:hover,
+.features-block:active,
+.features-block:focus {
+  outline: none;
+}
+.features-block h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold';
+  margin-bottom: 3rem;
+}
+.features-block p {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.6rem;
+}
+.features-img {
+  height: 8rem;
+  margin-bottom: 3rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.prev {
+  position: absolute;
+  z-index: 99;
+  width: 1.7rem;
+  height: 3rem;
+  border: none;
+  background: url(../img/left-arrow.png);
+  top: 50%;
+  left: 0;
+  -webkit-transform: scaleY(-50%);
+          transform: scaleY(-50%);
+}
+.next {
+  position: absolute;
+  z-index: 99;
+  width: 1.7rem;
+  height: 3rem;
+  border: none;
+  background: url(../img/right-arrow.png);
+  top: 50%;
+  right: 0;
+  -webkit-transform: scaleY(-50%);
+          transform: scaleY(-50%);
 }
 /* MEDIA */
 @media (max-width: 991px) and (min-width: 760px) {

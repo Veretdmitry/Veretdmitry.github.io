@@ -75,6 +75,13 @@ a:hover {
 section {
 	padding: 10rem 0;
 }
+.section-header {
+	margin: 2rem 0;
+	.bold();
+	font-size: 3.6rem;
+	text-align: center;
+}
+
 
 
 
@@ -194,8 +201,65 @@ section {
 
 
 
-/* MEDIA */
 
+
+/* Оформление секции с преимуществами */
+.features {
+	&-slider {
+		margin-top: 10rem;
+
+	}
+
+	&-block {
+		text-align: center;
+		&:hover,&:active,&:focus {
+			outline:none;
+		}
+		h3 {
+			font-size: 2rem;
+			.bold();
+			margin-bottom: 3rem;
+		}
+		p {
+			display: inline-block;
+			width: 80%;
+			font-size: 1.6rem;
+		}
+	}
+	&-img {
+		height: 8rem;
+		margin-bottom: 3rem;
+		img {
+		display: block;
+		margin: 0 auto;		
+		}
+	}
+}
+.prev {
+	position: absolute;
+	z-index: 99;
+	width: 1.7rem;
+	height: 3rem;
+	border: none;
+	background: url(../img/left-arrow.png);
+	top: 50%;
+	left: 0;
+	transform: scaleY(-50%);
+}
+.next {
+	position: absolute;
+	z-index: 99;
+	width: 1.7rem;
+	height: 3rem;
+	border: none;
+	background: url(../img/right-arrow.png);
+	top: 50%;
+	right: 0;
+	transform: scaleY(-50%);	
+}
+
+
+/* MEDIA */
 @media (max-width: 991px) and (min-width: 760px) {
 	.main {
 		background-position: top right;
