@@ -14,3 +14,5 @@
  [Урок 17: Использование готовых слайдеров](https://veretdmitry.github.io/L17.Slider/index.html)  
  [Урок 18: Добавление слайдера на первый макет](https://veretdmitry.github.io/L16.RealProject1/src/index.html)  
  [Урок 19: Модальные окна](https://veretdmitry.github.io/L19.ModalWindow/index.html)  
+ [Интенсив: Сайт Space X](https://veretdmitry.github.io/SpaceX/index.html) 
+ 
