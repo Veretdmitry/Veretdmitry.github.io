@@ -14,7 +14,7 @@ html {
 
 /* Main settings */
 .container {
-	width: 90%;
+	width: 85%;
 	max-width: 95rem;
 	margin: 0 auto;
 }
@@ -251,6 +251,11 @@ body {
 			font-size: 1.6rem;
 			line-height: 1.9rem;			
 		}
+
+	}
+	&-links {
+		display: flex;
+		justify-content: flex-start;
 	}
 	&-text {
 		flex-basis: 50%;
@@ -305,20 +310,23 @@ a.contacts-policy {
 }
 
 @media (max-width: 835px) {
-	.hero-content {
-		flex-direction: column;
-		align-items:center;
-		text-align: center;
-	}
-	.hero-avatar {
+	.hero {
+		&-content {
+			flex-direction: column;
+			align-items:center;	
+		}
+		&-avatar {
 		order:1;
 		margin-bottom: 17px;
-	}
-	.hero-text {
+		} 
+		&-text {
 		order:2;
+		}
 	}
-	.features-item {
-		flex-basis:45%;
+	.features {
+		&-item {
+			flex-basis:45%;
+		}
 	}
 	.section-title {
 		text-align: center;
@@ -327,18 +335,44 @@ a.contacts-policy {
 		flex-direction: column;
 		align-items:center;
 	}
-	.project-image {
+	.project {
+		&-image {
 		margin-bottom: 46px;
+		}
+		&-title {
+		text-align: center;
+		}
+
 	}
-	.project-title {
+	.contacts {
+		&-form {
+			margin-bottom: 50px;			
+		}
+		&-block {
+			flex-direction: column;
+			align-items: center;			
+		}
+		&-title {
+			text-align: center;
+		}
+		&-links {
+			justify-content: center;
+		}
+		&-policy {
+			text-align: center;
+		}
+	}
+	.social-links {
 		text-align: center;
 	}
-	.contacts-block {
-		flex-direction: column;
-		align-items: center;
+
+	.mail-link {
+	display: block;
+	text-align: center;
 	}
-	.contacts-form {
-		margin-bottom: 50px;
+	.cphone-link {
+		display: block;
+		text-align: center;
 	}
 }
 
@@ -346,66 +380,90 @@ a.contacts-policy {
 	img {
 		max-width: 100%;
 	}
-	.hero-subtitle {
+	.hero {
+		padding-bottom: 75px;
+		&-button {
+			margin-bottom: 0;
+		}
+		&-content {
+		margin-bottom: 50px;
+		}
+		&-subtitle {
 		font-size: 16px;
 		line-height: 27px;
 		margin-bottom: 5px;
-	}
-	.hero-avatar {
-		height: 113px;
-		width: 113px;
+		}
+		&-avatar {
+		height: 150px;
+		width: 150px;
 		border-width: 4px;
 		background-size: 100%;
-		background-position: center top;
-	}
-	.hero-header {
+		background-position: center top -20px;
+		}
+		&-header {
 		margin-bottom: 38px;
+		}
+		&-title {
+		font-size: 24px;
+		line-height: 28px;
+		}
+		&-description {
+		font-size: 14px; 	
+		line-height: 140%;
+		}
 	}
+	.mail-link {
+	text-align: left;
+	}
+	.cphone-link {
+		text-align: left;
+	}
+
 	.social-link {
 		margin-left: 5px;
 	}
-	.hero-title {
-		font-size: 24px;
-		line-height: 28px;
-	}
-	.hero-description {
-		font-size: 14px; 	
-		line-height: 140%;
-	}
-	.hero {
-		padding-bottom: 75px;
+	.social-links {
+		text-align: left;
 	}
 	.section {
 		padding: 60px 0;
-	}
-	.section-title {
+		&-title {
 		font-size: 19px;
 		line-height: 22px;
+		margin-bottom: 48px; 
+		}
 	}
-	.features-item {
+	.features {
+		&-item {
 		flex-basis: 100%;
 		margin-bottom: 30px;
-		text-align: center;
-	}
-	.features-title {
+		}
+		&-image {
+			margin-bottom: 26px;
+		}
+		&-title {
 		font-size: 18px;
-	}
-	.features-text {
+		margin: 0;
+		margin-bottom: 6px;
+		}
+		&-text {
 		font-size: 14px;
 		line-height: 28px;
+		}
 	}
-	.project-title {
+	.project {
+		&-title {
 		font-size: 18px;
 		line-height: 150%;
-	}
-	.project-time,.projext-cost {
+		text-align: left;
+		}	
+		.projects &-time,&-cost {
 		flex-basis: 100%;
-	}
-	.project-paragraph {
+		}
+		&-paragraph {
 		font-size: 14px;
-	}
-	.contact-form {
-		padding: 40px 19px;
+		}
+
 	}
 	.form-title {
 		font-size: 15px;
@@ -413,17 +471,39 @@ a.contacts-policy {
 	.form-button {
 		font-size: 10px;
 	}
-	.contacts-phone,.contacts-mail {
-		flex-basis: 100%;
-	}
-	.contacts-title {
+	.contacts {
+		&-phone,&-mail {
+			flex-basis: 100%;
+			margin-bottom: 35px;
+		}	
+		&-title {
 		font-size: 18px;
 		line-height: 21px;
-	}
-	.contacts-link {
+		}	
+		&-link {
 		display: block;
 		margin-bottom: 13px;
 		font-size: 14px;
 		line-height: 16px;
+		}
+		&-links {
+			flex-direction: column;
+		}
+		&-title {
+			text-align: left;
+		}
+		&-links {
+			justify-content: left;
+		}
+		&-policy {
+			text-align: left;
+		}
+	}
+
+	.contact-form {
+		padding: 40px 19px;
+	}
+	a.contacts-policy {
+		margin-top: 27px;
 	}
 }

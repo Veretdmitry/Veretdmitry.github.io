@@ -7,7 +7,7 @@ html {
 }
 /* Main settings */
 .container {
-  width: 90%;
+  width: 85%;
   max-width: 95rem;
   margin: 0 auto;
 }
@@ -281,6 +281,14 @@ body {
   font-size: 1.6rem;
   line-height: 1.9rem;
 }
+.contacts-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 .contacts-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -343,7 +351,6 @@ a.contacts-policy {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
   }
   .hero-avatar {
     -webkit-box-ordinal-group: 2;
@@ -378,6 +385,9 @@ a.contacts-policy {
   .project-title {
     text-align: center;
   }
+  .contacts-form {
+    margin-bottom: 50px;
+  }
   .contacts-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -387,13 +397,41 @@ a.contacts-policy {
         -ms-flex-align: center;
             align-items: center;
   }
-  .contacts-form {
-    margin-bottom: 50px;
+  .contacts-title {
+    text-align: center;
+  }
+  .contacts-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts-policy {
+    text-align: center;
+  }
+  .social-links {
+    text-align: center;
+  }
+  .mail-link {
+    display: block;
+    text-align: center;
+  }
+  .cphone-link {
+    display: block;
+    text-align: center;
   }
 }
 @media (max-width: 564px) {
   img {
     max-width: 100%;
+  }
+  .hero {
+    padding-bottom: 75px;
+  }
+  .hero-button {
+    margin-bottom: 0;
+  }
+  .hero-content {
+    margin-bottom: 50px;
   }
   .hero-subtitle {
     font-size: 16px;
@@ -401,17 +439,14 @@ a.contacts-policy {
     margin-bottom: 5px;
   }
   .hero-avatar {
-    height: 113px;
-    width: 113px;
+    height: 150px;
+    width: 150px;
     border-width: 4px;
     background-size: 100%;
-    background-position: center top;
+    background-position: center top -20px;
   }
   .hero-header {
     margin-bottom: 38px;
-  }
-  .social-link {
-    margin-left: 5px;
   }
   .hero-title {
     font-size: 24px;
@@ -421,8 +456,17 @@ a.contacts-policy {
     font-size: 14px;
     line-height: 140%;
   }
-  .hero {
-    padding-bottom: 75px;
+  .mail-link {
+    text-align: left;
+  }
+  .cphone-link {
+    text-align: left;
+  }
+  .social-link {
+    margin-left: 5px;
+  }
+  .social-links {
+    text-align: left;
   }
   .section {
     padding: 60px 0;
@@ -430,15 +474,20 @@ a.contacts-policy {
   .section-title {
     font-size: 19px;
     line-height: 22px;
+    margin-bottom: 48px;
   }
   .features-item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 30px;
-    text-align: center;
+  }
+  .features-image {
+    margin-bottom: 26px;
   }
   .features-title {
     font-size: 18px;
+    margin: 0;
+    margin-bottom: 6px;
   }
   .features-text {
     font-size: 14px;
@@ -447,17 +496,15 @@ a.contacts-policy {
   .project-title {
     font-size: 18px;
     line-height: 150%;
+    text-align: left;
   }
-  .project-time,
-  .projext-cost {
+  .projects .project-time,
+  .project-cost {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
   .project-paragraph {
     font-size: 14px;
-  }
-  .contact-form {
-    padding: 40px 19px;
   }
   .form-title {
     font-size: 15px;
@@ -469,6 +516,7 @@ a.contacts-policy {
   .contacts-mail {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-bottom: 35px;
   }
   .contacts-title {
     font-size: 18px;
@@ -479,5 +527,28 @@ a.contacts-policy {
     margin-bottom: 13px;
     font-size: 14px;
     line-height: 16px;
+  }
+  .contacts-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts-title {
+    text-align: left;
+  }
+  .contacts-links {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .contacts-policy {
+    text-align: left;
+  }
+  .contact-form {
+    padding: 40px 19px;
+  }
+  a.contacts-policy {
+    margin-top: 27px;
   }
 }
