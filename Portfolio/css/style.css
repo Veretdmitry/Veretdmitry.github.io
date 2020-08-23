@@ -64,6 +64,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
   text-transform: uppercase;
+  color: #2E2E30;
   background: -webkit-gradient(linear, left top, left bottom, from(#fdde76), to(#ffbb01));
   background: linear-gradient(180deg, #fdde76 0%, #ffbb01 100%);
   -webkit-box-shadow: 0px 0.4rem 0 #B68500;
@@ -218,6 +219,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 90%;
   max-width: 38rem;
   background: #fff;
   -webkit-box-shadow: -0.5rem 0.5rem 0 #ffc41d;
@@ -362,6 +364,16 @@ a.contacts-policy {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .features-item {
     -ms-flex-preferred-size: 45%;
@@ -387,15 +399,16 @@ a.contacts-policy {
   }
   .contacts-form {
     margin-bottom: 50px;
+    padding: 39px 19px 47px 18px;
   }
   .contacts-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .contacts-title {
     text-align: center;
@@ -428,7 +441,10 @@ a.contacts-policy {
     padding-bottom: 75px;
   }
   .hero-button {
+    font-size: 10px;
+    line-height: 28px;
     margin-bottom: 0;
+    padding: 14px 25px;
   }
   .hero-content {
     margin-bottom: 50px;
@@ -451,10 +467,12 @@ a.contacts-policy {
   .hero-title {
     font-size: 24px;
     line-height: 28px;
+    text-align: center;
   }
   .hero-description {
     font-size: 14px;
     line-height: 140%;
+    text-align: center;
   }
   .mail-link {
     text-align: left;
@@ -470,6 +488,9 @@ a.contacts-policy {
   }
   .section {
     padding: 60px 0;
+  }
+  .section:not(:first-child) {
+    padding: 47px 0px;
   }
   .section-title {
     font-size: 19px;
@@ -498,6 +519,9 @@ a.contacts-policy {
     line-height: 150%;
     text-align: left;
   }
+  .project-subtitle {
+    font-size: 18px;
+  }
   .projects .project-time,
   .project-cost {
     -ms-flex-preferred-size: 100%;
@@ -505,12 +529,10 @@ a.contacts-policy {
   }
   .project-paragraph {
     font-size: 14px;
+    line-height: 150%;
   }
   .form-title {
     font-size: 15px;
-  }
-  .form-button {
-    font-size: 10px;
   }
   .contacts-phone,
   .contacts-mail {
