@@ -353,6 +353,7 @@ a.contacts-policy {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
   }
   .hero-avatar {
     -webkit-box-ordinal-group: 2;
@@ -406,9 +407,9 @@ a.contacts-policy {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contacts-title {
     text-align: center;
@@ -543,6 +544,11 @@ a.contacts-policy {
   .contacts-title {
     font-size: 18px;
     line-height: 21px;
+  }
+  .contacts-block {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .contacts-link {
     display: block;
