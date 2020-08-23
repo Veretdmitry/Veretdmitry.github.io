@@ -4,6 +4,7 @@ html {
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
+  overflow-x: hidden;
 }
 /* Main settings */
 .container {
@@ -14,6 +15,7 @@ html {
 /* Usual settings */
 body {
   background-color: #20202D;
+  overflow-x: hidden;
 }
 .social-link:not(:last-child) {
   margin-right: 2rem;
