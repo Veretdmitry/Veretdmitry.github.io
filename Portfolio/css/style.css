@@ -338,6 +338,32 @@ a.contacts-policy {
   color: #A5A5A5;
   margin-top: 7.3rem;
 }
+/* Modal*/
+.modal {
+  color: black;
+}
+.modal-title {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.modal-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.modal-thank {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+.modal hr {
+  border: 0;
+  height: 1px;
+  background-color: #FDDE76;
+  color: #FDDE76;
+}
 /* responses */
 @media (max-width: 1100px) {
   .hero-avatar {

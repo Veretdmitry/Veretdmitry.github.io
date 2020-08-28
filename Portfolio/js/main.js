@@ -7,3 +7,12 @@ var mySwiper = new Swiper('.swiper-container', {
     clickable: true
   },
 });
+
+var FormButton = document.getElementById('form-button');
+FormButton.onclick = function() {
+  $('#modal').modal();
+};
+var HeroButton = document.getElementById('hero-button');
+HeroButton.onclick = function () {
+  $('#modal').modal();
+};

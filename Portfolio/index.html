@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -16,10 +17,10 @@
 			<div class="hero-header" data-aos="fade-down" data-aos-duration="1500">
 				<img src="img/logo.svg" alt="" class="logo">
 				<div class="social-links">
-					<a href="https://veretdmitry.github.io/" class="social-link"><img src="img/social/github.svg" alt="github"></a>
-					<a href="#" class="social-link"><img src="img/social/twitter.svg" alt="twitter"></a>
-					<a href="https://www.instagram.com/yakutskiy_shaman/" class="social-link"><img src="img/social/instagram.svg" alt="instsgram"></a>
-					<a href="#" class="social-link"><img src="img/social/facebook.svg" alt="facebook"></a>
+					<a href="#modal" rel="modal:open" class="social-link"><img src="img/social/github.svg" alt="github"></a>
+					<a href="#modal" rel="modal:open" class="social-link"><img src="img/social/twitter.svg" alt="twitter"></a>
+					<a href="#modal" rel="modal:open" class="social-link"><img src="img/social/instagram.svg" alt="instsgram"></a>
+					<a href="#modal" rel="modal:open" class="social-link"><img src="img/social/facebook.svg" alt="facebook"></a>
 				</div>
 			</div>
 			<div class="hero-content">
@@ -27,7 +28,7 @@
 					<span class="hero-subtitle" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1200">Фрилансер</span>
 					<h1 class="hero-title" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200">Веретельников Дмитрий</h1>
 					<p class="hero-description" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1200">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина.</p>
-					<button class="hero-button" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1200">Бесплатная консультация</button>
+					<button id="hero-button" class="hero-button" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1200">Бесплатная консультация</button>
 				</div>
 				<div class="hero-avatar" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1200"></div>
 			</div>
@@ -38,32 +39,32 @@
 			<div class="container">
 				<h2 class="section-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Со мной удобно работать</h2>
 				<div class="features-block">
-					<div class="features-item" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1200">
+					<div class="features-item" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
 						<img src="img/features/offer-img.svg" alt="По договору" class="features-image">
 						<h3 class="features-title">По договору</h3>
 						<p class="features-text">Предоставлю все документы для бухгалтерии: договоры, счета и акты. Работаю как ИП без НДС.</p>
 					</div>
-					<div class="features-item" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1200">
+					<div class="features-item" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
 						<img src="img/features/deadline-img.svg" alt="Точно в срок" class="features-image">
 						<h3 class="features-title">Точно в срок</h3>
 						<p class="features-text">В договоре прописана моя  ответственность за срок проекта. Если просрочу — плачу неустойку. </p>
 					</div>
-					<div class="features-item" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1200">
+					<div class="features-item" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
 						<img src="img/features/agreement-img.svg" alt="Ценник под вас" class="features-image">
 						<h3 class="features-title">Ценник под вас</h3>
 						<p class="features-text">Если у вас нетиповой проект, сделаю рассчет цены за работу и объясню, как складывается цена.</p>
 					</div>
-					<div class="features-item" data-aos="fade-left" data-aos-delay="1400" data-aos-duration="1200">
+					<div class="features-item" data-aos="fade-left" data-aos-delay="1400" data-aos-duration="1000">
 						<img src="img/features/steps-img.svg" alt="Премежуточные итоги" class="features-image">
 						<h3 class="features-title">Премежуточные итоги</h3>
-						<p class="features-text">Показываю работу поэтапно, а не  в последий момент перед  крайним сроком. </p>
+						<p class="features-text">Показываю работу поэтапно, а не в последий момент перед крайним сроком. </p>
 					</div>
-					<div class="features-item" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="1200" >
+					<div class="features-item" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="1000" >
 						<img src="img/features/storage-img.svg" alt="Хостинг и домен " class="features-image">
 						<h3 class="features-title">Хостинг и домен </h3>
 						<p class="features-text">Если мы договорились о цене проекта, в неё входит всё: домен и хостинг на год + SSL сертификат.</p>
 					</div>
-					<div class="features-item" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1200" >
+					<div class="features-item" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000" >
 						<img src="img/features/conversation-img.svg" alt="Не брошу после сдачи" class="features-image">
 						<h3 class="features-title">Не брошу после сдачи</h3>
 						<p class="features-text">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.</p>
@@ -79,7 +80,7 @@
 			<h2 class="section-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Последние проекты</h2>
 
 			<!-- Slider main container -->
-			<div class="swiper-container" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1500">
+			<div class="swiper-container" style="overflow: hidden;" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1500">
 			    <!-- Additional required wrapper -->
 			    <div class="swiper-wrapper">
 			        <!-- Slides -->
@@ -181,44 +182,52 @@
 					<h4 class="form-title">Можете просто оставить заявку, я позвоню вам сегодня</h4>
 					<input type="text" class="input input-name" placeholder="Ваше имя">
 					<input type="text" class="input input-phone" placeholder="Ваш телефон">
-					<button class="hero-button">Бесплатная консультация</button>
+					<button id="form-button" class="hero-button">Бесплатная консультация</button>
 				</form>
 				<div class="contacts-text" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
 					<div class="contacts-data">
 						<div class="contacts-phone">
 							<h4 class="contacts-title">Телефон</h4>
-							<a href="tel:+79991234567" class="cphone-link">+7 999 123-45-67</a>
+							<a href="#modal" rel="modal:open" class="cphone-link">+7 999 999-99-99</a>
 						</div>
 						<div class="contacts-mail">
 							<h4 class="contacts-title">Почта</h4>
-							<a href="mailto:mail@mail.ru" class="mail-link">mail@mail.ru</a>
+							<a href="#modal" rel="modal:open" class="mail-link">aaauser2000@mail.ru</a>
 						</div>
 						<div class="contacts-social">
 							<h4 class="contacts-title">Соцсети</h4>
 							<div class="contacts-links">
-								<a href="https://t.me/Dmitry_Veretelnikov/" class="contacts-link">t.me/ivanov</a>
-								<a href="https://vk.com/id394580435" class="contacts-link">vk.me/ivanov</a>
-								<a href="#" class="contacts-link">fb.me/ivanov</a>
+								<a href="#modal" rel="modal:open" class="contacts-link">https://t.me/aaa/</a>
+								<a href="#modal" rel="modal:open" class="contacts-link">vk.me/aaa</a>
+								<a href="#modal" rel="modal:open" class="contacts-link">fb.me/aaa</a>
 							</div>
 
 						</div>
 					</div>
 					<div class="social-links">
-					<a href="https://veretdmitry.github.io/" class="social-link"><img src="img/social/github.svg" alt="github"></a>
-					<a href="#" class="social-link"><img src="img/social/twitter.svg" alt="twitter"></a>
-					<a href="https://www.instagram.com/yakutskiy_shaman/" class="social-link"><img src="img/social/instagram.svg" alt="instagram"></a>
-					<a href="#" class="social-link"><img src="img/social/facebook.svg" alt="facebook"></a>
+					<a href="#modal" rel="modal:open" class="social-link"><img src="img/social/github.svg" alt="github"></a>
+					<a href="#modal" rel="modal:open" class="social-link"><img src="img/social/twitter.svg" alt="twitter"></a>
+					<a href="https://www.instagram.com/aaa" class="social-link"><img src="img/social/instagram.svg" alt="instagram"></a>
+					<a href="#modal" rel="modal:open" class="social-link"><img src="img/social/facebook.svg" alt="facebook"></a>
 					</div>
-					<a href="#" class="contacts-policy">Политика конфиденциальности</a>
+					<a href="#modal" class="contacts-policy" rel="modal:open">Политика конфиденциальности</a>
 					</div>
 
 			</div>
 			<!-- /.contacts-block -->
-
+			<!-- modal -->
+			<div id="modal" class="modal">
+				<h2 class="modal-title">Доброго времени суток!</h2>
+				<p id="modal-text" class="modal-text">Кажется, вы очутились  на моём демонстрационном сайте.</p>
+				<p class="modal-text">Весь контент (текст, картинки, номера), представленный здесь, вымышленный. Он прикреплен исключительно для наполнения.</p>
+				<hr>
+				<span class="modal-thank">Спасибо!</span>
+			</div>
 		</div>
 	</footer>
 
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/main.js"></script>
